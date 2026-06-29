@@ -1,5 +1,5 @@
 # api-rest-estudos
-# 🚀 Estudos Baseados em API REST
+# Estudos Baseados em API REST
 
 ## O que é uma API? (Interface de Programação de Aplicação == API)
 
@@ -173,3 +173,44 @@ As 6 constraints do REST são:
 * Layered System
 * Code on Demand (opcional)
 * Uniform Interface
+---
+
+
+## Status Codes HTTP
+
+Os códigos de status HTTP indicam o resultado de uma requisição feita entre o cliente e o servidor.
+
+### 2xx - Sucesso
+A requisição foi processada com sucesso.
+
+- **200 OK** → Requisição realizada com sucesso (comum em `GET`, `PUT` e `DELETE`).
+- **201 Created** → Um novo recurso foi criado com sucesso (`POST`).
+- **202 Accepted** → A requisição foi aceita para processamento, mas ainda não foi concluída.
+- **204 No Content** → A requisição foi processada com sucesso, porém não há conteúdo para retornar.
+
+---
+
+### 3xx - Redirecionamento
+O cliente precisa realizar uma nova ação para concluir a requisição.
+
+- **301 Moved Permanently** → O recurso foi movido permanentemente para outra URL.
+- **302 Found** → O recurso foi movido temporariamente para outra URL.
+
+---
+
+### 4xx - Erros do Cliente
+O problema está na requisição enviada pelo cliente.
+
+- **400 Bad Request** → O servidor não conseguiu entender a requisição (dados inválidos, campos ausentes ou formato incorreto).
+- **401 Unauthorized** → O cliente não está autenticado ou as credenciais são inválidas.
+- **403 Forbidden** → O cliente está autenticado, mas não possui permissão para acessar o recurso.
+- **404 Not Found** → O recurso solicitado não foi encontrado.
+- **429 Too Many Requests** → O cliente excedeu o limite de requisições permitido.
+
+---
+
+### 5xx - Erros do Servidor
+O erro ocorreu durante o processamento da requisição no servidor.
+
+- **500 Internal Server Error** → Erro interno inesperado no servidor.
+- **503 Service Unavailable** → O serviço está temporariamente indisponível (sobrecarga ou manutenção).

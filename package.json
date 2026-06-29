@@ -1,0 +1,11 @@
+{
+  "name": "api-rest-estudos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/cristianaLuiza/api-rest-estudos.git",
+  "author": "cristiana <cristiana.luiza@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
